@@ -1,5 +1,4 @@
-﻿## Starter files cloned from https://github.com/wesbos/JavaScript30 
-## (see JavaScript30.com below) for Women Who Code Days of Code Challenge 2024
+﻿## Starter files cloned from https://github.com/wesbos/JavaScript30 (see JavaScript30.com below) for Women Who Code Days of Code Challenge 2024
 
 ---
 
