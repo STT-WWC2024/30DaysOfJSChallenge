@@ -10,7 +10,7 @@
   <p onClick="makeGreen()">×BREAK×DOWN×</p>
 
   <script>
-    const dogs = [{ name: 'Snickers', age: 2 }, { name: 'hugo', age: 8 }];
+    const dogs = [{ name: 'Snickers', age: 2 }, { name: 'Hugo', age: 8 }];
 
     function makeGreen() {
       const p = document.querySelector('p');
@@ -19,28 +19,57 @@
     }
 
     // Regular
+    console.log('Hello')
 
     // Interpolated
+    console.log('I can insert something here %s', 'I\'ve been inserted')
 
     // Styled
+    console.log('%c I can be styled!', 'font-size:15px; background:gray; color:pink; text-shadow: 2px 2px 0 red')
 
     // warning!
+    console.warn('Danger, Will Robinson!')
 
     // Error :|
+    console.error('Error! Error! Error!')
 
     // Info
+    console.info('For your information...')
 
     // Testing
+    const p = document.querySelector('p')
+    console.assert(p.classList.contains('info'), 'nope!')
 
     // clearing
+    console.clear()
 
     // Viewing DOM Elements
+    console.log(p)
+    console.dir(p)
 
     // Grouping together
+    dogs.forEach(dog => {
+      console.groupCollapsed(`${dog.name}`)
+      console.log(`This dog is ${dog.name}`)
+      console.log(`${dog.name} is ${dog.age}, or ${dog.age * 7} in dog yeaers`)
+      console.groupEnd(`${dog.name}`)
+
+    })
 
     // counting
+    console.count('potato')
+    console.count('tomato')
+    console.count('potato')
+    console.count('tomato')
+    console.count('tomato')
+    console.count('potato')
+    console.count('potato')
+    console.count('tomato')
 
     // timing
+    console.time('waiting')
+    // do something in here
+    console.timeEnd('waiting')
 
   </script>
 </body>
